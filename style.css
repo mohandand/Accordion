@@ -1,0 +1,38 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.accordionSection {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 40%;
+}
+.content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: white;
+}
+.accrdion_button {
+  text-align: left;
+  border: none;
+  margin-bottom: 2px;
+  box-shadow: rgb(0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+.accrdion_button::after {
+  content: '\25ba';
+  position: absolute;
+  top: 15px;
+  left: 80%;
+  font-size: 20px;
+}
+.accrdion_button_down::after {
+  content: '\25bc';
+  position: absolute;
+  top: 15px;
+  left: 80%;
+  font-size: 20px;
+}
